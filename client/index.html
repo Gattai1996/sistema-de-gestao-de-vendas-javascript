@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Sistema de gestão vendas</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema de gestão vendas</h1>
+        <p>Feito por Bruno Gattai. Acesse meu <a href="https://github.com/Gattai1996" target="_blank">portfolio no Github</a>.</p>
+    </header>
+
+    <section>
+        <form>
+            <div>
+                <label for="data">Data</label>
+                <input type="date" id="data" required autofocus />
+            </div>
+    
+            <div>
+                <label for="quantidade">Quantidade</label>
+                <input type="number" min="1" step="1" id="quantidade" value="1" required />
+            </div>
+    
+            <div>
+                <label for="valor">Valor</label>
+                <input id="valor" type="number" min="0.01" step="0.01" value="0.0" required />
+            </div>
+    
+            <button type="submit">Incluir</button>
+        </form>
+    </section>
+
+    <br>
+    <br>
+
+    <section>
+        <div class="vendasView"></div>
+    </section>
+
+    <script src="js/app/models/Venda.js"></script>
+
+</body>
+
+</html>
